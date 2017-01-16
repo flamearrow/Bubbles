@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		22B458411E2C61370042493A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B458401E2C61370042493A /* AppDelegate.swift */; };
-		22B458431E2C61370042493A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B458421E2C61370042493A /* ViewController.swift */; };
 		22B458461E2C61370042493A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B458441E2C61370042493A /* Main.storyboard */; };
 		22B458481E2C61370042493A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B458471E2C61370042493A /* Assets.xcassets */; };
 		22B4584B1E2C61370042493A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B458491E2C61370042493A /* LaunchScreen.storyboard */; };
+		22B458541E2C61A50042493A /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B458531E2C61A50042493A /* BubbleView.swift */; };
+		22B458561E2C61B30042493A /* BubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B458551E2C61B30042493A /* BubbleViewController.swift */; };
+		22B458581E2C63380042493A /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B458571E2C63380042493A /* Bubble.swift */; };
+		22B4585A1E2C65230042493A /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B458591E2C65230042493A /* UIKitExtension.swift */; };
+		22B4585C1E2C6BFD0042493A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4585B1E2C6BFD0042493A /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22B4583D1E2C61370042493A /* Bubbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bubbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B458401E2C61370042493A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22B458421E2C61370042493A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22B458451E2C61370042493A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22B458471E2C61370042493A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22B4584A1E2C61370042493A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22B4584C1E2C61370042493A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22B458531E2C61A50042493A /* BubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		22B458551E2C61B30042493A /* BubbleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleViewController.swift; sourceTree = "<group>"; };
+		22B458571E2C63380042493A /* Bubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
+		22B458591E2C65230042493A /* UIKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		22B4585B1E2C6BFD0042493A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		22B4583F1E2C61370042493A /* Bubbles */ = {
 			isa = PBXGroup;
 			children = (
-				22B458401E2C61370042493A /* AppDelegate.swift */,
-				22B458421E2C61370042493A /* ViewController.swift */,
+				22B458521E2C615C0042493A /* suppot */,
 				22B458441E2C61370042493A /* Main.storyboard */,
-				22B458471E2C61370042493A /* Assets.xcassets */,
-				22B458491E2C61370042493A /* LaunchScreen.storyboard */,
+				22B458531E2C61A50042493A /* BubbleView.swift */,
+				22B458591E2C65230042493A /* UIKitExtension.swift */,
+				22B458571E2C63380042493A /* Bubble.swift */,
+				22B4585B1E2C6BFD0042493A /* Utils.swift */,
+				22B458551E2C61B30042493A /* BubbleViewController.swift */,
 				22B4584C1E2C61370042493A /* Info.plist */,
 			);
 			path = Bubbles;
+			sourceTree = "<group>";
+		};
+		22B458521E2C615C0042493A /* suppot */ = {
+			isa = PBXGroup;
+			children = (
+				22B458401E2C61370042493A /* AppDelegate.swift */,
+				22B458471E2C61370042493A /* Assets.xcassets */,
+				22B458491E2C61370042493A /* LaunchScreen.storyboard */,
+			);
+			name = suppot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +116,7 @@
 				TargetAttributes = {
 					22B4583C1E2C61370042493A = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8KU5XM4LZ6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B458431E2C61370042493A /* ViewController.swift in Sources */,
+				22B458541E2C61A50042493A /* BubbleView.swift in Sources */,
+				22B458561E2C61B30042493A /* BubbleViewController.swift in Sources */,
 				22B458411E2C61370042493A /* AppDelegate.swift in Sources */,
+				22B4585A1E2C65230042493A /* UIKitExtension.swift in Sources */,
+				22B458581E2C63380042493A /* Bubble.swift in Sources */,
+				22B4585C1E2C6BFD0042493A /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +212,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8KU5XM4LZ6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -237,6 +263,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8KU5XM4LZ6;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -299,6 +326,7 @@
 				22B458511E2C61370042493A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
