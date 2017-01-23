@@ -4,13 +4,16 @@ bubbleViewController:
 	*) upon click, call bllbelView#maybePopBubble
 
 bubbleView:
-*) create 5 random colored, similar sized bubble upon start
-	*) bubble should not overlap with eath other
-	*) bubble should be floating around
+*) clear the status bar -done
 
-*) maybePopBubble
-	*) findBubble if not nil, remove it
-	*) remove the bubble if there is bubble
+*) create some colored, similar sized bubble upon start -done
+	*) reduce number to 5 -doen
+	*) bubble should not overlap with eath other -done
+	*) entire bubble should be inside the screen -done
+
+*) maybePopBubble -done
+	*) findBubble if not nil, remove it -done
+	*) remove the bubble if there is bubble -done
 
 *) findBubble(CGPoint) -done
 	*) returns the bubble that covers the CGPoint or nil
@@ -19,9 +22,6 @@ bubbleView:
 
 *) long press to clear -done
 
-*) remove(Bubble)
-	*) remove from view
-	*) add animations
 
 *) addBubble -done
 	*) randomly generate a bubble(center, diameter), check if it's overlap with exsiting bubbles
@@ -29,10 +29,16 @@ bubbleView:
 		*) otherwise create the bubble and display it
 	*) give up when hits limit
 
-*) Bubble
-	*) diameter, center -done
+*) change bubble to uiview
+
+*) bubble drawing
+	*) shade
+	*) brght color
+
+*) animations
+	*) bubble should be floating from bottom and keep shaking
+	*) popping animation
+
+*) gravity	
 	*) gravity
 		let them drop on button first
-	*) maybe floating around
-	*) color, shade
-	*) moving, collision with other bubbles

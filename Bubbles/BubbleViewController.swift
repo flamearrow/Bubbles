@@ -11,15 +11,21 @@ import UIKit
 class BubbleViewController: UIViewController {    
     @IBOutlet weak var bubbleView: BubbleView! {
         didSet {
-            // bind gestrue listeners
+            bubbleView.clearAndRillBubbles()
             
         }
     }
     @IBAction func tap(_ sender: UITapGestureRecognizer) {
-        bubbleView.maybeAddBubble(center: sender.location(in: bubbleView))
+//        bubbleView.maybeAddBubble(center: sender.location(in: bubbleView))
+        bubbleView.maybePopBubble(center: sender.location(in: bubbleView))
     }
 
     @IBAction func longPress(_ sender: UILongPressGestureRecognizer) {
-        bubbleView.clearBubbles()
+//        bubbleView.clearBubbles()
+        bubbleView.clearAndRillBubbles()
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
 }

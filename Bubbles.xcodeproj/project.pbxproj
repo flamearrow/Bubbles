@@ -69,7 +69,6 @@
 				22B458571E2C63380042493A /* Bubble.swift */,
 				22B4585B1E2C6BFD0042493A /* Utils.swift */,
 				22B458551E2C61B30042493A /* BubbleViewController.swift */,
-				22B4584C1E2C61370042493A /* Info.plist */,
 			);
 			path = Bubbles;
 			sourceTree = "<group>";
@@ -77,6 +76,7 @@
 		22B458521E2C615C0042493A /* suppot */ = {
 			isa = PBXGroup;
 			children = (
+				22B4584C1E2C61370042493A /* Info.plist */,
 				22B458401E2C61370042493A /* AppDelegate.swift */,
 				22B458471E2C61370042493A /* Assets.xcassets */,
 				22B458491E2C61370042493A /* LaunchScreen.storyboard */,

@@ -12,11 +12,16 @@ class Utils: NSObject {
     
     static func randBubble() -> Bubble {
         let screenRect = UIScreen.main.bounds
-        let screenWidth = screenRect.size.width;
-        let screenHeight = screenRect.size.height;
+        let screenWidth = screenRect.size.width
+        let screenHeight = screenRect.size.height
         
-        // create a random bubble with diameter ranges from 200-400
-        return Bubble(center: CGPoint(x:CGFloat.random(max: screenWidth), y:CGFloat.random(max: screenHeight)), diameter:CGFloat.random(max: 200)+200)
+        // create a random bubble with diameter ranges from 100-250
+        return Bubble(center: CGPoint(x:CGFloat.random(max: screenWidth), y:CGFloat.random(max: screenHeight)), diameter:CGFloat.random(max: 100)+150, color:randColor())
+    }
+    
+    private static func randColor() -> UIColor {
+        let color = UIColor(red: CGFloat.random(max: 255)/255, green: CGFloat.random(max: 255)/255, blue: CGFloat.random(max: 255)/255, alpha: CGFloat.random(max: 255)/510 + 0.5)
+        return color
     }
     
     static func distance(point1:CGPoint, point2:CGPoint) -> CGFloat {
